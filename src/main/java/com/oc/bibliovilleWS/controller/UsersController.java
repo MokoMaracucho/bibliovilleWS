@@ -1,14 +1,15 @@
 package com.oc.bibliovilleWS.controller;
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
 public class UsersController {
 
-    @GetMapping()
+    @GetMapping("/users")
     public String getUser() {
-        return "HTTP GET request was sent";
+        return "test";
     }
 
     @PostMapping()
